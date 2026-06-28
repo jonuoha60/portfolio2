@@ -61,7 +61,7 @@ export const About = () => {
                 <a href="https://www.linkedin.com/in/john-onuoha1/" target="_blank" rel="noopener noreferrer" className="icon-link">
                   <FaLinkedin />
                 </a>
-                <a href="mailto:your@email.com" className="icon-link">
+                <a href="mailto:johnonuoha79@gmail.com" className="icon-link">
                   <FaEnvelope />
                 </a>
               </div>
