@@ -1,171 +1,147 @@
-.header{
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-
-    padding: 1.2rem 3rem;
-    box-sizing: border-box;
-
-    z-index: 1000;
+/* ─── Header ────────────────────────────────────────────────────── */
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1.2rem 3rem;
+  box-sizing: border-box;
+  z-index: 1000;
 }
 
-.header-container{
-    width: 100%;
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 1rem 1.5rem;
-
-    border: 1px solid rgba(255,255,255,0.08);
-    border-radius: 18px;
-
-    background: rgba(255,255,255,0.04);
-    backdrop-filter: blur(12px);
+.header-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(12px);
 }
 
-.logo{
-    font-size: 1.4rem;
-    font-weight: 800;
-    color: white;
-
-    letter-spacing: 2px;
+/* ─── Logo ──────────────────────────────────────────────────────── */
+.logo {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--text);
+  letter-spacing: 2px;
+  text-decoration: none;
 }
 
-.nav-links{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+/* ─── Nav Links ─────────────────────────────────────────────────── */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
-.nav-item{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    gap: 0.5rem;
-
-    width: 48px;
-    height: 48px;
-
-    border-radius: 50%;
-
-    color: #cbd5e1;
-    text-decoration: none;
-
-    transition: all 0.3s ease;
+.nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: all 0.25s ease;
 }
 
-.nav-item:hover{
-    background: rgba(255,255,255,0.08);
-    color: white;
+.nav-item:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text);
 }
 
-.nav-icon{
-    font-size: 1.3rem;
+.nav-item.active {
+  background: var(--text);
+  color: var(--bg);
 }
 
-.nav-item.active{
-    background: white;
-    color: #07080a;
-
-    font-weight: 700;
+.nav-icon {
+  font-size: 1.3rem;
 }
 
-/* ========================= */
-/* TABLETS */
-/* ========================= */
+/* ─── Tablet ─────────────────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .header {
+    padding: 1rem 1.2rem;
+  }
 
-@media(max-width: 900px){
+  .header-container {
+    padding: 1rem;
+  }
 
-    .header{
-        padding: 1rem 1.2rem;
-    }
+  .nav-links {
+    gap: 0.4rem;
+  }
 
-    .header-container{
-        padding: 1rem;
-    }
+  .nav-item {
+    width: 44px;
+    height: 44px;
+  }
 
-    .nav-links{
-        gap: 0.7rem;
-    }
-
-    .nav-item{
-        width: 44px;
-        height: 44px;
-    }
-
-    .nav-icon{
-        font-size: 1.15rem;
-    }
+  .nav-icon {
+    font-size: 1.15rem;
+  }
 }
 
-/* ========================= */
-/* MOBILE */
-/* ========================= */
+/* ─── Mobile ─────────────────────────────────────────────────────── */
+@media (max-width: 600px) {
+  .header {
+    padding: 0.8rem;
+  }
 
-@media(max-width: 600px){
+  .header-container {
+    flex-direction: row;
+    padding: 0.8rem 1rem;
+    border-radius: 14px;
+  }
 
-    .header{
-        padding: 0.8rem;
-    }
+  .logo {
+    font-size: 1.1rem;
+  }
 
-    .header-container{
-        flex-direction: column;
-        gap: 1rem;
+  .nav-links {
+    gap: 0.3rem;
+  }
 
-        padding: 0.9rem;
-    }
+  .nav-item {
+    width: 40px;
+    height: 40px;
+  }
 
-    .logo{
-        font-size: 1.1rem;
-    }
-
-    .nav-links{
-        width: 100%;
-
-        justify-content: center;
-        flex-wrap: wrap;
-
-        gap: 0.6rem;
-    }
-
-    .nav-item{
-        width: 42px;
-        height: 42px;
-    }
-
-    .nav-icon{
-        font-size: 1rem;
-    }
+  .nav-icon {
+    font-size: 1rem;
+  }
 }
 
-/* ========================= */
-/* SMALL DEVICES */
-/* ========================= */
+/* ─── Small Devices ──────────────────────────────────────────────── */
+@media (max-width: 400px) {
+  .header {
+    padding: 0.6rem;
+  }
 
-@media(max-width: 400px){
+  .header-container {
+    border-radius: 12px;
+    padding: 0.7rem 0.8rem;
+  }
 
-    .header{
-        padding: 0.6rem;
-    }
+  .logo {
+    font-size: 1rem;
+  }
 
-    .header-container{
-        border-radius: 14px;
-    }
+  .nav-links {
+    gap: 0.2rem;
+  }
 
-    .nav-links{
-        gap: 0.5rem;
-    }
+  .nav-item {
+    width: 36px;
+    height: 36px;
+  }
 
-    .nav-item{
-        width: 38px;
-        height: 38px;
-    }
-
-    .nav-icon{
-        font-size: 0.95rem;
-    }
+  .nav-icon {
+    font-size: 0.95rem;
+  }
 }

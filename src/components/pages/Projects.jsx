@@ -18,13 +18,13 @@ export const Projects = () => {
 
             <div className="project-buttons">
               <button className="project-btn">Read more</button>
-              <a
+              {project.githubLink && (<a
                 href={project.githubLink}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <button className="project-btn">View on GitHub</button>
-              </a>
+              </a>)}
             </div>
           </div>
         ))}

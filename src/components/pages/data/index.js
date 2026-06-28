@@ -4,7 +4,6 @@ export const projectData = [
     title: "Poule Mockup Interview",
     description:
       "Get personalized insights and practice questions to prepare for upcoming tech interviews across a wide range of technical fields.",
-    githubLink: "#",
   },
   {
     id: 2,
@@ -22,9 +21,9 @@ export const projectData = [
   },
   {
     id: 4,
-    title: "Metsi",
+    title: "Domain Risk",
     description:
-      "A social media platform for creative professionals to showcase their work, connect with peers, and discover new opportunities.",
-    githubLink: "#",
+      "A location-based risk analysis tool that identifies and evaluates potential hazards within physical environments. Analyzes environmental, safety, and situational risks — from fire hazards and structural damage to exposed wiring and unsafe surroundings — giving users a clear picture of danger levels in any space",
+    githubLink: "https://github.com/jonuoha60/Domain-Risk",
   },
 ];

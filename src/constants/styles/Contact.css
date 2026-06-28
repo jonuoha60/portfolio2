@@ -1,31 +1,61 @@
-.contact-container {
-  width: 100%;
-
+/* ─── Contact Page Container ────────────────────────────────────── */
+.contact-page {
+  min-height: 100vh;
   display: flex;
-  justify-content: center;
-
+  flex-direction: column;
+  align-items: center;
+  padding: 140px 50px 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
 }
 
+/* ─── Page Title ────────────────────────────────────────────────── */
+.contact-page > .top-container {
+  width: 100%;
+  margin-bottom: 56px;
+}
+
+.contact-page > .top-container h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--text);
+}
+
+/* ─── Contact Container ─────────────────────────────────────────── */
+.contact-container {
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+  justify-content: center;
+}
+
+/* ─── Contact Card ──────────────────────────────────────────────── */
 .contact-card {
   width: 100%;
-  max-width: 800px;
-
-  background: #111;
-        background: rgba(255,255,255,0.03);
-
-  border: 1px solid #222;
-
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 20px;
   padding: 2rem;
+  backdrop-filter: blur(12px);
+  transition: border-color 0.3s ease;
+}
+
+.contact-card:hover {
+  border-color: rgba(91, 74, 232, 0.3);
 }
 
 .contact-card h2 {
-  color: white;
-  font-size: 2rem;
-
+  color: var(--text);
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
   margin-bottom: 2rem;
 }
 
+/* ─── Form ──────────────────────────────────────────────────────── */
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -35,52 +65,58 @@
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-
   padding: 1rem;
-  border: 1px solid #333;
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 12px;
-
-  background: #1a1a1a;
-        background: rgba(255,255,255,0.03);
-
-  color: white;
-
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
   font-size: 1rem;
   outline: none;
-
   box-sizing: border-box;
+  resize: vertical;
+  transition: border-color 0.25s ease, background 0.25s ease;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: var(--text-muted);
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: #555;
+  border-color: rgba(91, 74, 232, 0.5);
+  background: rgba(91, 74, 232, 0.04);
 }
 
+/* ─── Submit Button ─────────────────────────────────────────────── */
 .contact-btn {
   padding: 1rem;
-
-  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 12px;
-
-  background: #0a0a0a;
-  color: white;
-
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text);
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 1rem;
   font-weight: 600;
-
   cursor: pointer;
-  transition: 0.3s ease;
+  transition: all 0.25s ease;
 }
 
 .contact-btn:hover {
-  background: #333;
-  transform: translateY(-3px);
+  border-color: rgba(91, 74, 232, 0.5);
+  color: var(--accent);
+  transform: translateY(-2px);
 }
 
+.contact-btn:active {
+  transform: scale(0.98);
+}
+
+/* ─── Social Links ──────────────────────────────────────────────── */
 .social-links {
   display: flex;
   gap: 1rem;
-
   margin-top: 2rem;
   flex-wrap: wrap;
 }
@@ -89,20 +125,20 @@
   display: flex;
   align-items: center;
   gap: 0.7rem;
-
-  padding: 0.9rem 1.2rem;
-
-  background: #0a0a0a;
+  padding: 0.9rem 1.4rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 12px;
-
-  color: white;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  font-weight: 500;
   text-decoration: none;
-
-  transition: 0.3s ease;
+  transition: all 0.25s ease;
 }
 
 .social-link-contact:hover {
-  background: #222;
+  border-color: rgba(91, 74, 232, 0.4);
+  color: var(--accent);
   transform: translateY(-3px);
 }
 
@@ -110,21 +146,23 @@
   font-size: 1.3rem;
 }
 
-/* Responsive */
-@media screen and (max-width: 768px) {
+/* ─── Responsive ────────────────────────────────────────────────── */
+@media (max-width: 860px) {
+  .contact-page {
+    padding: 100px 24px 80px;
+  }
+}
+
+@media (max-width: 768px) {
   .contact-card {
     padding: 1.5rem;
-  }
-
-  .contact-card h2 {
-    font-size: 1.6rem;
   }
 
   .social-links {
     flex-direction: column;
   }
 
-  .social-link {
+  .social-link-contact {
     width: 100%;
     justify-content: center;
   }

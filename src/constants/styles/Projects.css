@@ -3,7 +3,6 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  margin-top: 3rem;
 }
 
 .project-card {
@@ -17,7 +16,7 @@
 
 .project-card:hover {
   transform: translateY(-8px);
-  border-color: #444;
+  border-color: rgba(91, 74, 232, 0.4);
   /* background: #181818; */
 }
 
