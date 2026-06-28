@@ -4,6 +4,7 @@ export const projectData = [
     title: "Poule Mockup Interview",
     description:
       "Get personalized insights and practice questions to prepare for upcoming tech interviews across a wide range of technical fields.",
+    tools: ["Docker", "TypeScript", "Gemini API", "Vapi"],
   },
   {
     id: 2,
@@ -11,6 +12,7 @@ export const projectData = [
     description:
       "A trip budgeting app designed to help users plan expenses, navigate destinations, and organize their travel experience.",
     githubLink: "https://github.com/jonuoha60/Ameer-AI",
+    tools: ["Go", "TypeScript", "MongoDB", "Gemini API", "Google Maps API"],
   },
   {
     id: 3,
@@ -18,6 +20,7 @@ export const projectData = [
     description:
       "This project allows users to access Spotify queues, listen to music with friends in real time, and compete to see who has the best music taste.",
     githubLink: "https://github.com/jonuoha60/Next-on-Aux",
+    tools: ["Spring Boot", "Spotify API", "JavaScript", "CSS", "JWT Auth"],
   },
   {
     id: 4,
@@ -25,5 +28,6 @@ export const projectData = [
     description:
       "A location-based risk analysis tool that identifies and evaluates potential hazards within physical environments. Analyzes environmental, safety, and situational risks — from fire hazards and structural damage to exposed wiring and unsafe surroundings — giving users a clear picture of danger levels in any space",
     githubLink: "https://github.com/jonuoha60/Domain-Risk",
+    tools: ["Google Vision", "TypeScript", "Docker", "JavaScript"],
   },
 ];

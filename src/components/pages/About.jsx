@@ -99,44 +99,79 @@ export const About = () => {
             </>
           )}
 {options === "education" && (
-  <div className='education-container'>
-    <div className='education-card'>
-      <div className='education-header'>
-        <div className='education-title'>
-          <img
-            src="https://www.yorku.ca/favicon.ico"
-            alt="York University"
-            className='school-icon'
-          />
-          <h3>York University</h3>
-        </div>
-        <p className='education-year'>2028</p>
-      </div>
-      <ul className="education-list">
-        <li className='education-item'>Bachelor of Engineering, Software Engineering</li>
-      </ul>
-    </div>
+  <>
+    <h2>Education</h2>
 
-    <div className='education-card'>
-      <div className='education-header'>
-        <div className='education-title'>
-         <img
-  src="https://www.google.com/s2/favicons?domain=humber.ca&sz=64"
-  alt="Humber College"
-  className='school-icon'
-/>
-          <h3>Humber College — 4/5.0</h3>
-        </div>
-        <p className='education-year'>2023 - 2025</p>
-      </div>
-      <ul className='education-list'>
-        <li className='education-item'>Advanced Diploma in Computer Programming and Analysis</li>
-        <li className='education-item'><span>Dean's Honour List</span></li>
-      </ul>
-    </div>
+    <div className='education-container'>
 
-   
-  </div>
+      <div className='education-card'>
+        <div className='education-header'>
+          <div className='education-title'>
+            <img
+              src="https://www.yorku.ca/favicon.ico"
+              alt="York University"
+              className='school-icon'
+            />
+            <h3>York University</h3>
+          </div>
+          <p className='education-year'>2028</p>
+        </div>
+        <ul className="education-list">
+          <li className='education-item'>Bachelor of Science, Honours</li>
+        </ul>
+
+        <div className='education-section'>
+          <p className='education-section-label'>Coursework</p>
+          <div className='education-tags'>
+            <span className='education-tag'>Object-Oriented Programming</span>
+            <span className='education-tag'>Discrete Mathematics</span>
+            <span className='education-tag'>Linear Algebra</span>
+            <span className='education-tag'>Calculus</span>
+            <span className='education-tag'>Operating Systems</span>
+          </div>
+        </div>
+      </div>
+
+      <div className='education-card'>
+        <div className='education-header'>
+          <div className='education-title'>
+            <img
+              src="https://www.google.com/s2/favicons?domain=humber.ca&sz=64"
+              alt="Humber College"
+              className='school-icon'
+            />
+            <h3>Humber College</h3>
+          </div>
+          <p className='education-year'>2023 - 2025</p>
+        </div>
+        <ul className='education-list'>
+          <li className='education-item'>Advanced Diploma in Computer Programming and Analysis</li>
+        </ul>
+
+        <div className='education-section'>
+          <p className='education-section-label'>Achievements</p>
+          <div className='education-tags'>
+            <span className='education-tag achievement'>🏆 Dean's Honour List</span>
+            <span className='education-tag achievement'>4.0 / 5.0 GPA</span>
+          </div>
+        </div>
+
+        <div className='education-section'>
+          <p className='education-section-label'>Coursework</p>
+          <div className='education-tags'>
+            <span className='education-tag'>Data Structures & Algorithms</span>
+            <span className='education-tag'>Operating Systems</span>
+            <span className='education-tag'>Database Systems</span>
+            <span className='education-tag'>Advanced Database Programming</span>
+            <span className='education-tag'>Networking</span>
+            <span className='education-tag'>Web Development</span>
+            <span className='education-tag'>Cross-Platform Development</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </>
 )}
 
           {options === "passion" && (

@@ -34,6 +34,24 @@
   color: #bdbdbd;
 }
 
+.project-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.project-tag {
+  background: rgba(169, 187, 217, 0.12);
+  padding: 5px 0.9rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.25s ease;
+  cursor: default;
+}
+
+
 .project-buttons {
   display: flex;
   gap: 1rem;

@@ -15,15 +15,25 @@ export const Projects = () => {
 
             <p>{project.description}</p>
 
+            {project.tools && (
+  <div className="project-tools">
+    {project.tools.map((tool) => (
+      <span key={tool} className="project-tag">{tool}</span>
+    ))}
+  </div>
+)}
+
             <div className="project-buttons">
-              <button className="project-btn">Read more</button>
-              {project.githubLink && (<a
+              {project.githubLink ? (<a
                 href={project.githubLink}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <button className="project-btn">View on GitHub</button>
-              </a>)}
+              </a>) : (
+                              <button className="project-btn">Read more</button>
+
+              )}
             </div>
           </div>
         ))}
