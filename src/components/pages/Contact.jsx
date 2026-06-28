@@ -28,7 +28,7 @@ export const Contact = () => {
 
           <div className="social-links">
             <a
-              href="https://github.com/yourgithub"
+             href="https://github.com/jonuoha60"
               target="_blank"
               rel="noopener noreferrer"
               className="social-link-contact"
@@ -38,7 +38,7 @@ export const Contact = () => {
             </a>
 
             <a
-              href="https://linkedin.com/in/yourlinkedin"
+              href="https://www.linkedin.com/in/john-onuoha1/"
               target="_blank"
               rel="noopener noreferrer"
               className="social-link-contact"
