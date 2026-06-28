@@ -15,6 +15,7 @@ import {
 
 import {
   SiTypescript,
+  SiDocker,
   SiNextdotjs,
   SiExpress,
   SiMongodb,
@@ -66,16 +67,46 @@ export const Skills = () => {
         </div>
 
         {/* Databases */}
-        <div className="skill-card">
-          <h2>Databases</h2>
-          <div className="skill-items">
-            <div className="skill-item"><SiMongodb color="#47a248" /><span>MongoDB</span></div>
-            <div className="skill-item"><SiMysql color="#4479a1" /><span>MySQL</span></div>
-            <div className="skill-item"><SiPostgresql color="#336791" /><span>PostgreSQL</span></div>
-            <div className="skill-item"><SiFirebase color="#ffca28" /><span>Firebase</span></div>
-            <div className="skill-item"><FaDatabase color="#f29111" /><span>SQL</span></div>
-          </div>
-        </div>
+<div className="skill-card">
+  <h2>Databases & Tools</h2>
+
+  <div className="skill-items">
+    <div className="skill-item">
+      <SiMongodb color="#47a248" />
+      <span>MongoDB</span>
+    </div>
+
+    <div className="skill-item">
+      <SiMysql color="#4479a1" />
+      <span>MySQL</span>
+    </div>
+
+    <div className="skill-item">
+      <SiPostgresql color="#336791" />
+      <span>PostgreSQL</span>
+    </div>
+
+    <div className="skill-item">
+      <SiFirebase color="#ffca28" />
+      <span>Firebase</span>
+    </div>
+
+    <div className="skill-item">
+      <FaDatabase color="#f29111" />
+      <span>SQL</span>
+    </div>
+
+    <div className="skill-item">
+      <FaGitAlt color="#f05032" />
+      <span>Git</span>
+    </div>
+
+    <div className="skill-item">
+      <SiDocker color="#2496ed" />
+      <span>Docker</span>
+    </div>
+  </div>
+</div>
 
         {/* Tools */}
         {/* <div className="skill-card">

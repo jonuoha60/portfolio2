@@ -1,17 +1,35 @@
 .skills-container {
   display: flex;
-  /* flex: 1; */
-
-
-    flex-direction: column;
-
-  gap: 2rem; /* space between Frontend, Backend, Databases, Tools */
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
 .skill-card {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;  
+  flex: 1;
+  min-width: 320px;
+
+  padding: 1.5rem;
+
+  background: rgba(255, 255, 255, 0.03);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+
+  backdrop-filter: blur(12px);
+
+  transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+  border-color: rgba(99, 102, 241, 0.3);
+}
+
+.skill-card h2 {
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 700;
 }
 
 .skill-items {
@@ -21,32 +39,58 @@
 }
 
 .skill-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
   width: 100px;
   height: 100px;
 
-    background: rgba(255,255,255,0.03);
-  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-  color: white;
-  transition: 0.3s ease;
-  text-align: center;
+  border-radius: 16px;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  color: #e2e8f0;
+
+  transition: all 0.3s ease;
 }
 
 .skill-item:hover {
   transform: translateY(-5px);
-  background: #22222246;
+
+  background: rgba(99, 102, 241, 0.1);
+
+  border-color: rgba(99, 102, 241, 0.4);
+
+  box-shadow: 0 10px 25px rgba(99, 102, 241, 0.15);
 }
 
 .skill-item svg {
   font-size: 2rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.6rem;
 }
 
 .skill-item span {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+@media (max-width: 1100px) {
+  .skill-card {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .skill-items {
+    justify-content: center;
+  }
+
+  .skill-item {
+    width: 90px;
+    height: 90px;
+  }
 }

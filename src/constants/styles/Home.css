@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 .container {
-  width: 100%;
+    width: 100%;
   min-height: 100vh;
   background: #07080a;
   background-image:
@@ -10,9 +10,52 @@
     radial-gradient(ellipse at 60% 80%, rgba(59, 130, 246, 0.05) 0%, transparent 50%);
   color: white;
 
+ 
+  gap: 6rem;
+
+  padding: 8rem 4rem;
+  box-sizing: border-box;
+}
+
+.profile-image-container {
   display: flex;
+ 
+}
+
+
+
+.profile-image {
+  width: 280px;
+  height: 280px;
+  margin-bottom: 20px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  border: 3px solid rgba(255, 255, 255, 0.08);
+
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.35),
+    0 0 40px rgba(99, 102, 241, 0.15);
+
+  transition: all 0.3s ease;
+}
+
+.container-bottom {
+     display: flex;
   justify-content: space-between;
   align-items: center;
+    width: 100%;
+  min-height: 100vh;
+  background: #07080a;
+  background-image:
+    radial-gradient(ellipse at 20% 50%, rgba(99, 102, 241, 0.08) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 20%, rgba(139, 92, 246, 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 60% 80%, rgba(59, 130, 246, 0.05) 0%, transparent 50%);
+  color: white;
+
+ 
   gap: 6rem;
 
   padding: 8rem 4rem;
@@ -20,7 +63,6 @@
 }
 
 .top-container{
-    flex: 1;
     max-width: 650px;
 }
 
@@ -36,29 +78,21 @@
 .subtext{
     font-size: 1.1rem;
     color: #94a3b8;
-    margin-bottom: 2rem;
     letter-spacing: 0.5px;
 }
 
 .subtext-para{
     font-size: 1.2rem;
-    font-weight: 700;
 
     color: #dddfe2;
 
-    margin-bottom: 2.5rem;
+    margin-bottom: 15px;
 
     line-height: 1.7;
     letter-spacing: 0.5px;
 }
 
-.socials{
-    display: flex;
-    align-items: center;
-    gap: 1rem;
 
-    flex-wrap: wrap;
-}
 
 .social-link{
     text-decoration: none;
@@ -312,6 +346,45 @@
 
 .page-exit {
   animation: fadeOutDown 0.3s ease forwards;
+}
+
+.socials {
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.resume-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.social-icons {
+  display: flex;
+  margin-top: 30px;
+  margin-left: 5px;
+  gap: 1.25rem;
+  font-size: 1.6rem;
+}
+
+.icon-link {
+  color: inherit;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.icon-link:hover {
+  transform: translateY(-3px);
+  opacity: 0.8;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon {
+  font-size: 1rem;
 }
 
 @keyframes fadeInUp {

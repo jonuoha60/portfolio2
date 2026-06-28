@@ -4,11 +4,14 @@ import "../../constants/styles/Home.css"
 import {
   FaLinkedin,
   FaGithub,
-  FaFileAlt
+  FaFileAlt,
+  FaDownload,
+  FaEnvelope,
 } from "react-icons/fa";
 
 import { HiArrowDown } from "react-icons/hi";
 import Resume from "../../constants/resume/JohnOnuohaResume.pdf"
+import ProfileImage from "../../constants/assest/me.jpeg"
 
 export const About = () => {
 
@@ -16,58 +19,87 @@ export const About = () => {
 
   return (
     
-    <div className='container'>
-      <section className='top-container'>
-        <p className='subtext'>
-          Portfolio | Software & AI Engineer.
-        </p>
+    <div className='container-bottom'>
+     <section className="hero-section">
+<div className="hero-section">
 
-        <h1>Ikenna Onuoha</h1>
+  <div className="top-container">
+    {/* Profile Image */}
+  <div className="profile-image-container">
+    <img
+      src={ProfileImage}
+      alt="Ikenna Onuoha"
+      className="profile-image"
+    />
+  </div>
+    <p className="subtext">
+      Portfolio | Software & AI Engineer.
+    </p>
 
-        <h3 className='subtext-para'>
-          Building to help.
-        </h3>
+    <h1>Ikenna Onuoha</h1>
 
-       <div className='socials'>
+    <h3 className="subtext-para">
+      Building to help.
+    </h3>
 
-  <a
-    href={Resume}
-    target='_blank'
-    rel='noopener noreferrer'
-    className='social-link'
-  >
-    <button className='social-btn'>
-      <FaFileAlt className='icon' />
-      View Resume
-    </button>
-  </a>
+    <div className="socials">
+      <div className="resume-actions">
+        <a
+          href={Resume}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="social-link"
+        >
+          <button className="social-btn">
+            <FaFileAlt className="icon" />
+            View Resume
+          </button>
+        </a>
 
-  <a
-    href='https://www.linkedin.com/in/john-onuoha1/'
-    target='_blank'
-    rel='noopener noreferrer'
-    className='social-link'
-  >
-    <button className='social-btn'>
-      <FaLinkedin className='icon' />
-      LinkedIn
-    </button>
-  </a>
+        <a
+          href={Resume}
+          download
+          className="social-link"
+        >
+          <button className="social-btn">
+            <FaDownload className="icon" />
+            Download Resume
+          </button>
+        </a>
+      </div>
 
-  <a
-    href='https://github.com/jonuoha60'
-    target='_blank'
-    rel='noopener noreferrer'
-    className='social-link'
-  >
-    <button className='social-btn'>
-      <FaGithub className='icon' />
-      GitHub
-    </button>
-  </a>
+      <div className="social-icons">
+        <a
+          href="https://github.com/jonuoha60"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="icon-link"
+        >
+          <FaGithub />
+        </a>
 
+        <a
+          href="https://www.linkedin.com/in/john-onuoha1/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="icon-link"
+        >
+          <FaLinkedin />
+        </a>
+
+        <a
+          href="mailto:your@email.com"
+          className="icon-link"
+        >
+          <FaEnvelope />
+        </a>
+      </div>
+    </div>
+  </div>
 </div>
-      </section>
+  
+
+</section>
 
       <section className='about-me'>
 
@@ -165,14 +197,7 @@ export const About = () => {
 
 </section>
 
-      <div className='scroll-indicator'>
-        <span>Scroll</span>
-
-        <div className='scroll-circle'>
-          <HiArrowDown className='scroll-icon' />
-        </div>
-      </div>
-
+ 
     </div>
   )
 }
