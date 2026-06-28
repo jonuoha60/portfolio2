@@ -142,7 +142,7 @@ export const About = () => {
             />
             <h3>Humber College</h3>
           </div>
-          <p className='education-year'>2023 - 2025</p>
+          <p className='education-year'>Graduated 2025</p>
         </div>
         <ul className='education-list'>
           <li className='education-item'>Advanced Diploma in Computer Programming and Analysis</li>
