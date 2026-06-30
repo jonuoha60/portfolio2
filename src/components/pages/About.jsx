@@ -114,7 +114,7 @@ export const About = () => {
             />
             <h3>York University</h3>
           </div>
-          <p className='education-year'>208</p>
+          <p className='education-year'>2029</p>
         </div>
         <ul className="education-list">
           <li className='education-item'>Bachelor of Science, Honours</li>
