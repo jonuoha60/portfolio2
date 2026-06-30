@@ -10,7 +10,7 @@ export const projectData = [
     description:
       "Get personalized insights and practice questions to prepare for upcoming tech interviews across a wide range of technical fields.",
     // image: pouleImg,
-    tools: ["Docker", "TypeScript", "Gemini API", "Vapi"],
+    tools: ["Docker", "TypeScript", "Gemini API", "Vapi API"],
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ export const projectData = [
       "This project allows users to access Spotify queues, listen to music with friends in real time, and compete to see who has the best music taste.",
     image: nextOnAuxImg,
     githubLink: "https://github.com/jonuoha60/Next-on-Aux",
-    tools: ["Spring Boot", "Spotify API", "JavaScript", "CSS", "JWT Auth"],
+    tools: ["Spring Boot", "Spring Security", "Spotify API", "JavaScript", "CSS", "JWT Auth", "MySQL"],
   },
   {
     id: 4,
