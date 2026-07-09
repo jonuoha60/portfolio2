@@ -24,13 +24,13 @@ export const About = () => {
         <div className="hero-layout">
 
           {/* Left: photo */}
-          <div className="profile-image-container">
+          {/* <div className="profile-image-container">
             <img
               src={ProfileImage}
               alt="Ikenna Onuoha"
               className="profile-image"
             />
-          </div>
+          </div> */}
 
           {/* Right: text + socials */}
           <div className="hero-text">
