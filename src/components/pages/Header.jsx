@@ -14,7 +14,6 @@ export const Header = ({ setCurrentPage, currentPage }) => {
       <div className='header-container'>
 
         <div className='logo'>
-          IO
         </div>
 
         <nav className='nav-links'>

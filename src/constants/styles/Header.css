@@ -4,7 +4,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  padding: 1.2rem 3rem;
+  padding: 1.2rem 170px;
   box-sizing: border-box;
   z-index: 1000;
 }
@@ -15,10 +15,10 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  /* border: 1px solid rgba(255, 255, 255, 0.08); */
   border-radius: 18px;
-  background: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(12px);
+  /* background: rgba(255, 255, 255, 0.04); */
+  /* backdrop-filter: blur(12px); */
 }
 
 /* ─── Logo ──────────────────────────────────────────────────────── */
@@ -94,16 +94,24 @@
   }
 
   .header-container {
-    flex-direction: row;
+    position: relative;
+    display: flex;
+    justify-content: center; /* Centers the nav */
+    align-items: center;
     padding: 0.8rem 1rem;
     border-radius: 14px;
   }
 
   .logo {
+    position: absolute;
+    left: 1rem;
     font-size: 1.1rem;
   }
 
   .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 0.3rem;
   }
 

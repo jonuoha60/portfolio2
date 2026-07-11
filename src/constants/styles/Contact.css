@@ -151,6 +151,10 @@
   .contact-page {
     padding: 100px 24px 80px;
   }
+  .top-container h1 {
+ 
+  text-align: center;
+}
 }
 
 @media (max-width: 768px) {
