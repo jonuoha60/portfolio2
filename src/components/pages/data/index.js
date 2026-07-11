@@ -10,25 +10,24 @@ export const projectData = [
     description:
       "Get personalized insights and practice questions to prepare for upcoming tech interviews across a wide range of technical fields.",
     // image: pouleImg,
-    tools: ["Docker", "TypeScript", "Gemini API", "Vapi API"],
+    tools: ["Docker", "TypeScript", "Node js", "Gemini API", "Vapi API"],
   },
   {
     id: 2,
     title: "Ameer AI",
     description:
-      "A trip budgeting app designed to help users plan expenses, navigate destinations, and organize their travel experience.",
-    image: ameerImg,
+      "A trip budgeting app that helps users plan expenses, navigate destinations, and organize their travel experience, built with a Gin RESTful backend integrated with the Google Maps API for accurate and reliable location data.",    image: ameerImg,
     githubLink: "https://github.com/jonuoha60/Ameer-AI",
-    tools: ["Go", "TypeScript", "MongoDB", "Gemini API", "Google Maps API"],
+    tools: ["Go", "TypeScript", "CSS", "MongoDB", "Gemini API", "Google Maps API"],
   },
   {
     id: 3,
     title: "Next on Aux",
     description:
-      "This project allows users to access Spotify queues, listen to music with friends in real time, and compete to see who has the best music taste.",
+      "Built a music listening platform with the spotify API where users create and join rooms to listen to music with friends in real time, and compete to see who has the best music taste.",
     image: nextOnAuxImg,
     githubLink: "https://github.com/jonuoha60/Next-on-Aux",
-    tools: ["Spring Boot", "Spring Security", "Spotify API", "JavaScript", "CSS", "JWT Auth", "MySQL"],
+    tools: ["Java", "Spring Boot", "Spring Security", "Spotify API", "JavaScript", "CSS", "MySQL"],
   },
   {
     id: 4,
@@ -37,6 +36,6 @@ export const projectData = [
       "A location-based risk analysis tool that identifies and evaluates potential hazards within physical environments. Analyzes environmental, safety, and situational risks—from fire hazards and structural damage to exposed wiring and unsafe surroundings—giving users a clear picture of danger levels in any space.",
     image: domainRiskImg,
     githubLink: "https://github.com/jonuoha60/Domain-Risk",
-    tools: ["Google Vision", "TypeScript", "Docker", "JavaScript"],
+    tools: ["React", "TypeScript", "Google Vision", "Docker", "JavaScript"],
   },
 ];

@@ -9,9 +9,15 @@
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 20px;
-  padding: 2rem;
+  padding: 30px;
   transition: 0.3s ease;
   cursor: pointer;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .project-card:hover {
@@ -37,6 +43,7 @@
 .project-tools {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 0.6rem;
   margin-top: 1rem;
 }
@@ -55,12 +62,17 @@
 .project-buttons {
   display: flex;
   gap: 1rem;
+  
+  justify-content: center;
+  width: 100%;
 
-  margin-top: 1.5rem;
+  margin-top: auto;
+  padding-top: 1.5rem;
   flex-wrap: wrap;
 }
 
 .project-btn {
+  flex: 1;
   padding: 0.8rem 1.4rem;
 
   border: none;
@@ -69,9 +81,24 @@
   border-radius: 10px;
 
   background: #222;
-  border: 1px solid rgba(255,255,255,0.1);
 
     background: rgba(255,255,255,0.05);
+  color: white;
+
+  font-size: 0.95rem;
+  font-weight: 500;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.project-btn2 {
+
+
+  border: none;
+  outline: none;
+
+
+    background: transparent;
   color: white;
 
   font-size: 0.95rem;
@@ -88,16 +115,17 @@
 .project-btn:active {
   transform: scale(0.97);
 }
-.project-image-container {
-  width: 100%;
-  margin-bottom: 1rem;
+
+.project-image-wrapper {
+  width: calc(100% + 4rem);
+  margin: -2rem -2rem 1.5rem -2rem;
 }
 
 .project-image {
   width: 100%;
-  height: 220px;
+  height: 250px;
   object-fit: cover;
-  border-radius: 12px;
+  border-radius: 0;
   display: block;
 }
 

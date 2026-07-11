@@ -11,6 +11,15 @@ export const Projects = () => {
       <section className="projects-container">
         {projectData.map((project) => (
           <div className="project-card" key={project.id}>
+              {project.image && (
+              <div className="project-image-wrapper">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="project-image"
+                />
+              </div>
+            )}
             <h2>{project.title}</h2>
 
             <p>{project.description}</p>
@@ -28,8 +37,9 @@ export const Projects = () => {
                 href={project.githubLink}
                 target="_blank"
                 rel="noopener noreferrer"
+                className="project-btn"
               >
-                <button className="project-btn">View on GitHub</button>
+                <button className="project-btn2">View on GitHub</button>
               </a>) : (
                               <button className="project-btn">Read more</button>
 
