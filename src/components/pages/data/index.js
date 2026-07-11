@@ -6,7 +6,7 @@ import domainRiskImg from "../../../assets/projects/domain-risk.png";
 export const projectData = [
   {
     id: 1,
-    title: "Poule Mockup Interview",
+    title: "Tech-Me",
     description:
       "Get personalized insights and practice questions to prepare for upcoming tech interviews across a wide range of technical fields.",
     // image: pouleImg,
@@ -27,7 +27,7 @@ export const projectData = [
       "Built a music listening platform with the spotify API where users create and join rooms to listen to music with friends in real time, and compete to see who has the best music taste.",
     image: nextOnAuxImg,
     githubLink: "https://github.com/jonuoha60/Next-on-Aux",
-    tools: ["Java", "Spring Boot", "Spring Security", "Spotify API", "JavaScript", "CSS", "MySQL"],
+    tools: ["Java", "Spring Boot", "Spring Security", "Spotify API", "JavaScript", "HTML", "CSS", "MySQL"],
   },
   {
     id: 4,
