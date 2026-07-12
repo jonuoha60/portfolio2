@@ -2,6 +2,7 @@
 import ameerImg from "../../../assets/projects/ameer-ai.png";
 import nextOnAuxImg from "../../../assets/projects/Next-on-aux.png";
 import domainRiskImg from "../../../assets/projects/domain-risk.png";
+import techme from "../../../assets/projects/techme.png";
 
 export const projectData = [
   {
@@ -9,7 +10,7 @@ export const projectData = [
     title: "Tech-Me",
     description:
       "Get personalized insights and practice questions to prepare for upcoming tech interviews across a wide range of technical fields.",
-    // image: pouleImg,
+    image: techme,
     tools: ["Docker", "TypeScript", "Node js", "Gemini API", "Vapi API"],
   },
   {
