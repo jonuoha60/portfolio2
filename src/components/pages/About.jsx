@@ -9,7 +9,7 @@ import {
   FaEnvelope,
 } from "react-icons/fa";
 
-import Resume from "../../constants/resume/JohnOnuohaResume.pdf"
+import Resume from "../../constants/resume/IkennaOnuohaResume.pdf"
 import ProfileImage from "../../constants/assest/me.jpeg"
 
 export const About = () => {
